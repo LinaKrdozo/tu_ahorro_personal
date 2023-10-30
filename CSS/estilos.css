@@ -1,0 +1,383 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'open sans', 'Antonio','open sans condensed';
+
+}
+
+.contenedor{
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo{
+  color:#4B5267;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*header*/
+header{
+  width: 100%;
+  height: 600px;
+  background: #16222a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsl(202,17%,39%,0.159), hsl(231, 28%, 22%,0.464 )), url("/img/portada.jpg"));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  hsl(204,31%,13%,0.559), hsl(200, 33%, 34%,0.564 )), url("/img/portada.jpg");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  opacity: 0.9;
+}
+
+.logo img{
+  margin-left: 70px;
+  float: left;
+  width:250px;
+  padding: 5px 70px 0 0;
+}
+
+nav{
+  text-align: right;
+  padding: 40px 50px 0 0;
+}
+
+nav > a{
+  color: #CED3DC;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav> a:hover{
+  color:#fff;
+  /*text-decoration:underline;*/
+}
+
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header{
+  font-size: 40px;
+  color: #fff;
+}
+
+.textos-header h2{
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.textos-header .boton{
+  display: inline-block;
+  padding: 4px;
+  width: 200px;
+  /*border: 1px solid #fff;*/
+  color:#000;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+}
+.boton{
+  background-color: #FFC857;
+  color:#80CED7;
+  /*border: 1px solid #2980b9;*/
+  transition-property: background-color,color,border;
+  transition-duration: 0.4s;
+}
+
+.boton:hover{
+  background-color: #fff;
+  color: #000;
+  /*border: 1px solid #fff ;*/
+}
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*intro*/
+.titulo{
+  display: flex;
+  justify-content: space-around;
+  margin:100px 0px;
+}
+.intro .titulo{
+  margin-bottom: 50px;
+}
+
+.contenedor-introduccion{
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen-about-us{
+  width:48%;
+  height: 500%;
+  padding: 1px;
+  text-align: center;
+  max-width: 100%;
+  justify-content: center;
+  position: relative;
+  top: 10px; /* ajustar los valores para mover la imagen */
+  left: -5px;
+}
+
+.intro .contenido-textos{
+  width: 48%;
+  text-align: center;
+}
+
+.contenido-textos p{
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+  line-height :28px;
+}
+
+
+/*video educacion financiera*/
+.video{
+  background: #f2f2f2;
+}
+
+.video-educacion-financiera{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display:block;
+}
+
+/*porcentaje*/
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards .card{
+  background: #FFC857;
+  margin:25px 10PX;
+  display: flex;
+  width: 40%;
+  height: 150px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.cards .card img{
+ width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /*border: 3px solid #000;*/
+  border-radius:50%;
+  display: block;
+}
+
+.cards .card > .contenido-texto-card{
+  width: 60%;
+  color: #000;
+}
+
+.cards .card > .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+/*testimonios*/
+
+.about-testimonios{
+  background: #f2f2f2;
+  padding-bottom: 10px;
+
+}
+
+.testimonios-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.testimonios-ind{
+  width: 28%;
+  text-align: center;
+  top:10px;
+}
+.about-testimonios .contenedor .titulo{
+
+    color: #4B5267;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+.testimonios-ind img{
+  width: 100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius:50%;
+   display: flex;
+   margin: 20px 70px;
+}
+
+.testimonios-ind h3{
+  margin: 10px 0;
+}
+
+.testimonios-ind h3{
+  font-weight: bold;
+  text-align: center;
+
+}
+.testimonios-ind p{
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  width: 100%;
+  background: #272727;
+  color: #fff;
+}
+
+.footer-main {
+  width: 98%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-main .footer-columna {
+  width: calc(100% / 4);
+  text-align: left;
+}
+
+
+.footer-main .footer-columna:nth-child(2) {
+  padding: 0px 10px;
+}
+
+.footer-main .footer-columna h3 {
+  font-size: 18px;
+  color: #f1c232;
+  margin-bottom: 20px;
+}
+.footer-main .logo img{
+  margin-left: 40px;
+  float: left;
+  width:350px;
+  padding: 5px 90px 0px 0px;
+}
+.footer-main .footer-columna span{
+  color:#9e9797;
+}
+.footer-main .footer-columna span p {
+  display:inline-block;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: center;
+  color:#9e9797;
+}
+
+.footer-main .footer-columna p{
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 250;
+}
+
+.footer-columna nav{
+  text-align: left;
+  padding: 3px 60px 0 0;
+}
+
+.footer-columna nav > a{
+  color: #9e9797;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right:200px;
+}
+
+.footer-copy-redes {
+  width: 100%;
+  background: #272727;
+  border-top: 1px solid #9e9797;
+}
+
+.main-copy-redes {
+  width: 98%;
+  max-width: 1000px;
+  padding: 15px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+  width: 70%;
+  color: #9e9797;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.main-copy-redes .footer-redes {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.main-copy-redes .footer-redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius:50%;
+  background: #f1c232;
+  color: #272727;
+  text-align: center;
+}
+/*@media screen and (max-heigth:200px){
+  .imagen-about-us{
+    height: 40%;
+  }
+}*/
